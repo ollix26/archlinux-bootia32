@@ -32,3 +32,4 @@ jobs:
         with:
           files: out/bootia32.efi
           tag_name: ${{ env.BOOTIA_TAG }}
+          make_latest: true
