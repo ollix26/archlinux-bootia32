@@ -10,10 +10,11 @@ Make partprobe:
 
     sudo partprobe
     
-Format new partition on your USB disk:
+Format new partition on your USB disk, WARN: The FS-LABEL must correspond with the output file name otherwise it will not work!
     
     sudo mkfs.vfat -F 32 -n <FS-LABEL> <DEV-TARGET-N>
     
+
 Mount partition:
 
     sudo mount <DEV-TARGET-N> <MNT-TARGET-N>
